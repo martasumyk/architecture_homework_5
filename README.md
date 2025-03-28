@@ -15,3 +15,7 @@ uvicorn db_service:db_app --host 0.0.0.0 --port 8001 --reload
 uvicorn business_service:business_app --host 0.0.0.0 --port 8002 --reload
 
 uvicorn client_service:client_app --host 0.0.0.0 --port 8003 --reload
+
+Example:
+
+curl -X GET "http://localhost:8003/process" -H "Authorization: Bearer token"
